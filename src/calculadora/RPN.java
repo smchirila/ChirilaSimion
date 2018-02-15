@@ -15,14 +15,7 @@ poner los paréntesis para alterar la prioridad)
 vistas en clase.
  */
 
-class NodoPila {
-	public NodoPila(double dato, NodoPila abajo) {
-		this.dato = dato;
-		this.abajo = abajo;
-	}
-	public NodoPila abajo;
-	public double dato;
-}
+
 public class RPN {
 	public void pushPila(double nuevo_dato) {
 		NodoPila nuevo_nodo = new NodoPila(nuevo_dato, arriba);
