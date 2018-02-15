@@ -1,6 +1,6 @@
 package calculadora;
 
-/*
+/**
 Objetivo: Obtener código refactorizado a partir de otro que no lo está.
 Tarea: Para esta tarea, se refactorizará un programa mal escrito, sin
 cambiar la forma en que funciona el programa. Este programa, RPN.java
@@ -14,7 +14,6 @@ poner los paréntesis para alterar la prioridad)
  Se debe reorganizar este código usando al menos tres de las reglas
 vistas en clase.
  */
-
 
 public class RPN {
 	public void pushPila(double nuevo_dato) {
@@ -40,10 +39,10 @@ public class RPN {
 				// obtener un string a partir del numero
 
 				String temp = "";
-				for(j = 0; (j < 100) && (Character.isDigit(
-						commando.charAt(i)) || (commando.charAt(i) == '.')); j++, i++) {
-					temp = temp + String.valueOf(commando.
-							charAt(i));
+				for(j = 0; j < 100 && (Character.isDigit(
+						commando.charAt(i)) || commando.charAt(i) == '.'); j++, i++) {
+					temp = temp + commando.
+							charAt(i);
 				}
 				// convertir a double y añadir a la pila
 				numero = Double.parseDouble(temp);
