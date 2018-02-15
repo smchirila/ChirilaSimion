@@ -1,6 +1,6 @@
 package calculadora;
 
-/**
+/** 
 Objetivo: Obtener código refactorizado a partir de otro que no lo está.
 Tarea: Para esta tarea, se refactorizará un programa mal escrito, sin
 cambiar la forma en que funciona el programa. Este programa, RPN.java
